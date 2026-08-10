@@ -82,7 +82,8 @@
      max-width: 1700px;
      height:60px;
      left: 100px;
-     bottom: 45px;
+     bottom: 30px;
+    top: 840px; /* Alterado de bottom para top para empurrar para baixo  não estava conseguindo com o bottom */
      z-index: 1;
  
  
