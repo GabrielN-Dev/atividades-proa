@@ -1,0 +1,21 @@
+body{
+  background-image: url(../src/assets/images/fundo.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+main{
+  color: white;
+}
+h1{
+  background: black;
+  text-align: center;
+}
+p{
+  background-color: black;
+  font-size: 35px;
+}
+#fundo_footer{
+  font-weight: bold; 
+  text-align: center;
+}

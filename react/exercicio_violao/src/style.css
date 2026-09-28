@@ -1,0 +1,269 @@
+* { /* aplica o estilo a todos os elementos da página */
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(assets/face.png);
+    background-size: 100% 550px;
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+
+main {  
+    position: relative;
+    width: 90%;
+    margin: auto; /* centraliza horizontalmente */
+    font-family: arial;
+    text-align: justify;
+    color: #FFF;
+}
+
+header {
+    position: relative;
+    width: 100%;
+    height: 150px;
+    background-image: url(assets/guitarras_header.jpg);
+    background-size: cover;
+    margin: auto;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end; /* coloca os elementos à direita */
+}
+
+nav {
+    position: relative;
+    width: 40%;
+    height: 30px;
+    background-color: #FFF;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around; /* divide o espaço entre os links */
+    margin-right: 25px;
+}
+
+nav a {
+    color: black;
+    font-size: 15px;
+    text-decoration: none;
+    width: 20%;
+    text-align: center;
+    transition: all 0.3s ease; /* transição suave de cor */
+}
+
+nav a:hover {
+    color: #ba1211;
+    text-decoration: underline;
+}
+
+/* ---------- SECTION 1: Nossa Loja ---------- */
+#section1 {
+    position: relative;
+    width: 100%;
+    height: 320px;
+    background-color: #ba1211;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#nossa_loja,
+#loja {
+    position: relative;
+    width: 43%;
+    height: 260px;
+}
+
+#nossa_loja {
+    background-color: #ba8a8a;
+    padding: 20px;
+    margin-right: 50px;
+}
+
+#nossa_loja h2 {
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+#nossa_loja p {
+    font-size: 15px;
+    text-align: left;
+}
+
+#loja {
+    background-image: url(/Imagens/loja.jpg);
+    background-size: cover; /* ajusta a foto dentro da caixa */
+    background-position: center bottom;
+    background-repeat: no-repeat;
+}
+
+#section2 {
+    position: relative;
+    width: 100%;
+    height: 320px;
+    background-color: #FFF;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: black;
+}
+
+.preco {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 20%;
+    text-align: center;
+    padding: 10px;
+}
+
+.preco img {
+    width: 200px;
+    height: 150px;
+    object-fit: contain;
+    display: block;
+    margin: auto;
+    object-position: top;
+}
+
+.preco p {
+    font-size: 12px;
+    line-height: 1.4;
+    margin-top: 8px;
+}
+
+.preco .valor {
+    font-weight: bold;
+    color: #c62828;
+    margin-top: 5px;
+}
+
+#section3 {
+    position: relative;
+    width: 100%;
+    height: 320px;
+    background-color: #ba5511;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 20px;
+    gap: 70px;
+    border-top: #c67172 solid 15px;
+    border-bottom: #c67172 solid 15px;
+}
+
+#localizacao_map {
+    position: relative;
+}
+
+#loja_localizacao {
+    position: relative;
+    width: 45%;
+    height: 260px;
+    background-color: #ba8a8a;
+    padding: 20px;
+    margin-right: 50px;
+}
+
+#loja_localizacao h2 {
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+#loja_localizacao p {
+    font-size: 15px;
+    text-align: left;
+}
+
+/* ---------- SECTION 4: Cadastro e redes sociais ---------- */
+#section4 {
+    display: flex;
+    justify-content: flex-start;
+    padding: 20px;
+    gap: 60px;
+    border-right: #c67172 solid 10px;
+    border-bottom: #c67172 solid 15px;
+}
+
+#cadastro {
+    position: relative;
+    width: 45%;
+    height: 300px;
+    margin-top: 10px;
+    color: black;
+}
+
+fieldset {
+    border: none;
+    margin-left: 40px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 13px;
+    border-radius: 5px;
+}
+
+input {
+    display: block;
+    width: 80%;
+    margin-bottom: 15px;
+    padding: 8px;
+    border: 1px solid #999;
+    border-radius: 5px;
+}
+
+textarea {
+    display: block;
+    width: 50%;
+    margin-bottom: 15px;
+    padding: 8px;
+    border: 1px solid #999;
+    border-radius: 5px;
+}
+
+#rede_social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 80px;
+}
+
+#rede_social img {
+    width: 70px;
+    height: 70px;
+}
+
+#rede_social div {
+    display: flex;
+    gap: 15px;
+}
+
+#rede_social h2 {
+    color: blue;
+}
+
+/* ---------- FOOTER ---------- */
+footer {
+    position: relative;
+    width: 100%;
+    height: 150px;
+    background-color: black;
+    text-align: center;
+    padding: 15px;
+}
+
+footer img {
+    width: 30px;
+    height: 30px;
+    margin: 15px;
+}
