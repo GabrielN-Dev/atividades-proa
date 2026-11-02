@@ -1,0 +1,53 @@
+
+.header {
+  width: 100%;
+  min-height: 76px;
+  padding: 0 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  border-bottom: 1px solid rgba(32, 31, 27, 0.15);
+}
+
+.wordmark {
+  color: #201f1b;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 1.15rem;
+  font-weight: 700;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.navigation a {
+  color: #201f1b;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.navigation a:hover {
+  color: #a23c2a;
+}
+
+@media (max-width: 600px) {
+  .header {
+    padding: 20px 6%;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .navigation {
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+}

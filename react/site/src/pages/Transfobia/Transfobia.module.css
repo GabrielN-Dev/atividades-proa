@@ -1,0 +1,252 @@
+
+.page {
+  --paper: #f1ede3;
+  --ink: #201f1b;
+  --muted: #625f57;
+  --line: #d6d0c4;
+  --accent: #a23c2a;
+  --green: #315644;
+
+  background: var(--paper);
+  color: var(--ink);
+  padding: 88px 7vw 110px;
+}
+
+.hero {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-bottom: 72px;
+  border-bottom: 1px solid var(--line);
+}
+
+.eyebrow {
+  margin: 0 0 24px;
+  color: var(--accent);
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+.title {
+  max-width: 900px;
+  margin: 0;
+  font-family: 'Literata', Georgia, serif;
+  font-size: clamp(42px, 6vw, 76px);
+  font-weight: 500;
+  line-height: 1.08;
+  letter-spacing: -0.045em;
+}
+
+.lead {
+  max-width: 740px;
+  margin: 28px 0 0;
+  color: var(--muted);
+  font-size: 21px;
+  line-height: 1.65;
+}
+
+.content {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.section {
+  padding: 64px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.section h2,
+.sourcesSection h2 {
+  max-width: 760px;
+  margin: 0 0 24px;
+  font-family: 'Literata', Georgia, serif;
+  font-size: clamp(29px, 3.5vw, 42px);
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: -0.025em;
+}
+
+.section > p,
+.sourcesSection > p {
+  max-width: 760px;
+  margin: 0 0 20px;
+  color: var(--muted);
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+.indicators {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0 36px;
+  margin-top: 36px;
+}
+
+.indicator {
+  padding: 26px 0;
+  border-top: 1px solid var(--line);
+}
+
+.indicator h3 {
+  margin: 0 0 12px;
+  color: var(--green);
+  font-family: 'Literata', Georgia, serif;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.indicator p {
+  max-width: 420px;
+  margin: 0;
+  color: var(--muted);
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+.dataGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  margin: 36px 0 28px;
+}
+
+.dataCard {
+  min-height: 220px;
+  padding: 28px;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.22);
+}
+
+.dataCard strong {
+  display: block;
+  margin-bottom: 18px;
+  color: var(--accent);
+  font-family: 'Literata', Georgia, serif;
+  font-size: clamp(38px, 4vw, 54px);
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: -0.04em;
+}
+
+.dataCard h3 {
+  margin: 0 0 12px;
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.dataCard p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 16px;
+  line-height: 1.65;
+}
+
+.note {
+  padding-left: 20px;
+  border-left: 3px solid var(--green);
+  font-size: 16px !important;
+  line-height: 1.7 !important;
+}
+
+.sourcesSection {
+  padding: 64px 0 0;
+}
+
+.sources {
+  margin-top: 32px;
+  border-top: 1px solid var(--line);
+}
+
+.source {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 25px 4px;
+  border-bottom: 1px solid var(--line);
+  color: inherit;
+  text-decoration: none;
+  transition: padding 180ms ease;
+}
+
+.source:hover {
+  padding-right: 12px;
+  padding-left: 12px;
+}
+
+.source h3 {
+  margin: 0 0 8px;
+  font-family: 'Literata', Georgia, serif;
+  font-size: 23px;
+  font-weight: 500;
+}
+
+.source p {
+  max-width: 680px;
+  margin: 0;
+  color: var(--muted);
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.source .sourceInstitution {
+  margin-bottom: 8px;
+  color: var(--green);
+  font-weight: 700;
+}
+
+.source span {
+  flex-shrink: 0;
+  color: var(--accent);
+  font-size: 25px;
+}
+
+@media (max-width: 760px) {
+  .page {
+    padding: 58px 6vw 80px;
+  }
+
+  .hero {
+    padding-bottom: 48px;
+  }
+
+  .title {
+    font-size: clamp(38px, 10vw, 56px);
+  }
+
+  .lead {
+    font-size: 18px;
+  }
+
+  .section {
+    padding: 46px 0;
+  }
+
+  .section > p,
+  .sourcesSection > p {
+    font-size: 17px;
+  }
+
+  .indicators {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .dataGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .dataCard {
+    min-height: auto;
+  }
+
+  .sourcesSection {
+    padding-top: 46px;
+  }
+
+  .source h3 {
+    font-size: 21px;
+  }
+}
+     
